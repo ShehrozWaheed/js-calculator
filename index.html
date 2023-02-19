@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <center>
+        <h1>ES6 Taking user input and display output</h1>
+        <button onclick="calculate('Add')">Add (+)</button>
+        <button onclick="calculate('Differ')">Difference (-) </button>
+        <button onclick="calculate('Multiply')">Multiply (*) </button>
+        <button onclick="calculate('Division')">Division (/)</button>
+    </center>
+
+    <script type="text/javascript">
+
+        function calculate(data) {
+
+            let num1 = prompt("please enter first value");
+            let num2 = prompt("please enter second value");
+            if (data == "Add") {
+                let sum = Number(num1) + Number(num2);
+                alert(data + " is : " + sum)
+            }
+            if (data == "Differ") {
+                let minus = Number(num1) - Number(num2);
+                alert(data + " is : " + minus)
+            }
+            if (data == "Multiply") {
+                let multiply = Number(num1) * Number(num2);
+                alert(data + " is : " + multiply)
+            }
+            if (data == "Division") {
+                let divide = Number(num1) / Number(num2);
+                alert(data + " is : " + divide)
+            }
+
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
